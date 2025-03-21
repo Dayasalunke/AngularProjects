@@ -10,5 +10,13 @@ export class ProductComponent {
   @Input() imgLink='';
   @Input() title='';
   @Input() price= 0;
-  @Input() description="";
+  @Input() description='';
+  show = false;
+  fun(){
+    this.show = true;
+  }
+  close(){
+    this.show = false;
+  }
 }
+  

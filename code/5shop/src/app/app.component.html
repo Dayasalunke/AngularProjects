@@ -1,8 +1,13 @@
 <app-header></app-header>
-<div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-7xl py-10 gap-5 px-5">
-  <div class="product p-3 flex flex-col justify-center items-center text-center border-2 rounded-2xl shadow-2xl hover:shadow-pink-600"*ngFor="let p of products">
-    <app-product imgLink={{p.image}} title={{p.title}} [price]="p.price" description="{{p.description}}"> </app-product>
+<div
+  class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-7xl py-10 gap-5 px-5">
+  <div class="product p-5 flex flex-col justify-center items-center text-center border-2 rounded-2xl shadow-2xl hover:shadow-pink-600"
+    *ngFor="let p of products">
+    <app-product
+      imgLink="{{ p.image }}"
+      title="{{ p.title }}"
+      [price]="p.price"
+      description="{{ p.description }}"></app-product>
   </div>
 </div>
 <app-footer></app-footer>
-  

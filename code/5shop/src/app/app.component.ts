@@ -50,7 +50,7 @@ export class AppComponent {
       "price": 1500,
       "description": "Waterproof, windproof, and breathable jacket perfect for outdoor adventures.",
       "category": "men's clothing",
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqwSOxRNZ64FIJF_3wy2PrGFtp1M2WqfHy9qkd4idAes1bADhdo49cpdO3IENDMcZyYTNxVcNQ8xhYF7d9q1cZtxtdaTlKyDniQz8zO94Ruts8quESv5zMOA",
+      "image": "https://www.53degreesnorth.ie/cdn/shop/products/0000_A8AZ_JK3_HERO_2.jpg?v=1738081001&width=1780",
       "rating": {
         "rate": 4.5,
         "count": 900
