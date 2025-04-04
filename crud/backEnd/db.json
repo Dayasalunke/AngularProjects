@@ -1,0 +1,17 @@
+{
+  "movies": [
+    {
+      "name": "Salar",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtQSqEa4q8Fq9xp7zSfTfoTlMK7j_xKCdDqGsak3H1xwQNetlVi2x0GzDT5R_K8alxzaY0"
+    },
+    {
+      "name": "bahubali",
+      "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTqe-sagxelFIsAWDAdPFgIPQNyB94iSAFvLoI5Hi7ojnqoZVf38OVZlDiiBhwBYsmASbo"
+    },
+    {
+      "id": "9762",
+      "name": "tatya",
+      "img": "https://m.media-amazon.com/images/M/MV5BNWMyMWM1YjctMDJiNy00ZDZhLWI4M2YtNDRhNDNkZTNmOGU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+}

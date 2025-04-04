@@ -1,0 +1,13 @@
+Routing is used to navigate from one web page to another web page.Angular uses separate module for routing called Routing module
+Each Route specifies it's path and its component to render.
+All Routes are mentioned within Routes Array
+
+step 1: create paths with components in app-routing.module.ts
+const routes: Routes = [
+  {path:'', component:HomeComponent},
+  { path: 'about', component: AboutComponent },
+  {path:'contact',component:ContactComponent}
+];
+
+step 2: mention <router-outlet> whenever we need components to come
+step 3: use routerLink instead of href in anchor tags to avoid page reload

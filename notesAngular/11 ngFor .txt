@@ -1,0 +1,23 @@
+ngFor:  ngFor is also a structural Directives which is used  for repetitive UI based on a condition
+
+<element *ngFor="let x of array">
+  //code
+</element>
+
+eg: //app.component.ts
+arr=["raj","shekhar","elone","steve"]
+//app.component.html
+<p *ngFor="let x of arr">
+     My name is {{x}}
+</p>
+
+ii. property Directives:
+These Directives are used to change the properties of elements in DOM.
+   a. ngClass
+   b. ngStyle
+
+ngClass: ngClass is a property Directive which is used to add dynamic class names
+<element [ngClass]={'class1':true}>something</element>
+
+ngStyle: ngStyle is a property Directive which is used to add dynamic styles
+<element [ngStyle]="{'property name':true/false?'value1':'value2'}>some text</element>

@@ -1,0 +1,7 @@
+in this task 4 names 
+prasad,shekhar,john,philip
+
+1. keep 2 h2 and 2 buttons is first and second buttons.
+2.by default second button is disabled.
+3.every time change click change h2
+4.when h2 is philip then second button is enable. 

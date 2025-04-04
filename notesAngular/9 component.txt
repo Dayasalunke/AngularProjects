@@ -1,0 +1,80 @@
+Component: Component is the reusable part of the UI(user Interface). Components can be kept one inside another called nested component.
+To create a component command is:
+    ng generate component component-name 
+
+
+1.>-Nested Components:  component Inside another component is called Nested Components
+eg: //app.component.html
+<app-movie></app-movie>
+
+Here app-movie is the child component and app.component.html is parent component
+
+Communication between the components:
+   components can send data from parent to child or child to parent or any other components too.
+
+
+2.>Parent to child:
+    Parent component can send data to child component in two ways
+    i. @Input
+    ii. content projection
+
+    i.@Input() :
+    Parent component can send data to child components as attributes/properties but those values are received by Child components using @Input() decorator
+
+    //app.component.html
+    <app-details name="prasad" age="28" ></app-details>
+    <app-details name="shekhar" age="54" ></app-details>
+    <app-details name="suresh" age="49" ></app-details>
+
+     //details.component.ts
+     @Input() name='';
+     @Input() age=0;
+
+      //details.component.html
+      <div>
+         <h2>{{name}}</h2>
+         <p>{{age}}</p>
+      </div>
+
+    ii. content-projection: it allows parent component to project some content into child components template directly using ng-content element
+    //app.component.html
+    <app-details>
+         <h2>Prasad</h2>
+         <p>28</p>
+    </app-details>
+    <app-details>
+         <h2>shekhar</h2>
+         <p>54</p>
+    </app-details>
+
+    //details.component.html
+       <ng-content></ng-content>
+
+
+   3.> Sending Data From Child Components to Parent Components:
+  To send Data  from child components to parent components , we can DOM manipulation using
+  i.@viewChild/@viewChildern: 
+       These decorators are used to access and maipulate the DOM elements of child components within components viewChild
+       @viewChild -- it is used to access a single value or single DOM element of child component
+              syntax: @viewChild(childSelector/element)  elementReference
+
+       //app.component.html
+<p>{child.name}</p>
+<h1>Parent component</h1>
+<app-comic></app-comic>
+//app.component.ts
+
+export class AppComponent{
+ @ViewChild(ComicComponent) child!:ComicComponent;
+}
+//comic.component.html
+
+<button (click)="incr()">click me</button>
+
+//comic.component.ts
+export class ComicComponent {
+  name="raj"
+}
+  ii. Template reference variables : we can manipulate any child items or any elements in angular using template reference variables. These are the custom names assigned using #notation and can be used for DOM manipulations
+
+  syntax: <element #name></element>

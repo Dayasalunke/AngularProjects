@@ -1,0 +1,13 @@
+Services are used to store common sharable data between components. it also perform common methods needed for components.
+services main purpose is to provide communication between multiple components
+Advantages:
+   i. it is used to separate presentation logic from business logic
+   ii. it is used by multiple components so , code reuability avoid code duplication
+   iii. with services, testing will be easy 
+
+How to use service?
+  a. create a service using command ng generate service service-name
+  b. write some logic/data in service class 
+  c. import the service into components
+  d. Inject the service into component using constructor
+  e. use the service

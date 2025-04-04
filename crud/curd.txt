@@ -1,0 +1,17 @@
+For CRUD, we need a dummy backend and database, for which i'm using a js library called json-server
+step 1: create a backend folder and create db.json and add data like following in db.json
+{
+    "movies":[
+        {
+            "name":"RRR",
+            "img":"https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/RRR_Poster.jpg/220px-RRR_Poster.jpg"
+        },
+        {
+             "name":"KGF",
+             "img":"https://i.pinimg.com/564x/1c/2e/ec/1c2eec7dd808a1e074ad6eaf3c4a575d.jpg"
+        }
+    ]
+}
+step 2: open terminal. goto backend folder,
+type "npm install -g json-server"
+step 3: json-server db.json --watch
