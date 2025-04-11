@@ -1,0 +1,204 @@
+{
+  "seller": [
+    {
+      "id": "1835",
+      "name": "Chandu",
+      "password": "abc@1234",
+      "email": "chand@123.com"
+    },
+    {
+      "id": "c88c",
+      "name": "daya",
+      "password": "abc@1234",
+      "email": "daya@gamil.com"
+    },
+    {
+      "id": "cf52",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "5ebf",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "d9be",
+      "email": "daya@gamil.com",
+      "password": "123456"
+    },
+    {
+      "id": "9f1d",
+      "email": "daya@gamil.com",
+      "password": "eeninikdnikdnkinkdnkn"
+    },
+    {
+      "id": "2838",
+      "email": "daya@gamil.com",
+      "password": "abc@1234"
+    },
+    {
+      "id": "ce99",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "5439",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "daya@gamil.com"
+    },
+    {
+      "id": "eaef",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "daya@gamil.com"
+    },
+    {
+      "id": "b425",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke8379@gmail.com"
+    },
+    {
+      "id": "bd38",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke8379@gmail.com"
+    },
+    {
+      "id": "0416",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke8379@gmail.com"
+    },
+    {
+      "id": "443d",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke@gmail.com"
+    },
+    {
+      "id": "969b",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke@gmail.com"
+    },
+    {
+      "id": "52cc",
+      "name": "Salunke Dayanand ",
+      "password": "abc@1234",
+      "email": "dayasalunke@gmail.com"
+    },
+    {
+      "id": "e42c",
+      "name": "dayanand salunke",
+      "password": "1234567",
+      "email": "salunke8379@gmail.com"
+    },
+    {
+      "id": "e73f",
+      "name": "ganesh",
+      "password": "ganu@1234",
+      "email": "ganesh@123gmail.com"
+    },
+    {
+      "id": "7528",
+      "name": "iniiknd",
+      "password": "wniwniwnf",
+      "email": "salunke8379@gmail.com"
+    },
+    {
+      "id": "09a8",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "ad80",
+      "name": "Salunke Dayanand ",
+      "password": "1234",
+      "email": "chand@123.com"
+    },
+    {
+      "id": "e910",
+      "name": "Ranjit Tat",
+      "password": "123456",
+      "email": "chand@123.com"
+    },
+    {
+      "id": "edd3",
+      "name": "baju",
+      "password": "baju",
+      "email": "baju@gmail.com"
+    },
+    {
+      "id": "0d7e",
+      "name": "baju",
+      "password": "baju",
+      "email": "baju@gamail.com"
+    },
+    {
+      "id": "423a",
+      "name": "baju",
+      "password": "123456",
+      "email": "baju@gmail.com"
+    },
+    {
+      "id": "6bd8",
+      "name": "baju",
+      "password": "12345",
+      "email": "chand@123.com"
+    },
+    {
+      "id": "4fd0",
+      "name": "baju",
+      "password": "1234",
+      "email": "baju@123.gmail.com"
+    },
+    {
+      "id": "a5a8",
+      "name": "baju",
+      "password": "111111",
+      "email": "baju@123gmail.com"
+    },
+    {
+      "id": "80c2",
+      "name": "bajarang",
+      "password": "baju",
+      "email": "bajarang@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "a2f1",
+      "name": "iphone 15",
+      "price": "30000",
+      "category": "mobile",
+      "color": "black",
+      "description": "wojwcnkw",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQPsh73iwGjnDvqunYRIfT8mLYduMS0yISQ&s"
+    },
+    {
+      "id": "1a87",
+      "name": "iphone 15",
+      "price": "30000",
+      "category": "mobile",
+      "color": "black",
+      "description": "mobile apple",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQPsh73iwGjnDvqunYRIfT8mLYduMS0yISQ&s"
+    },
+    {
+      "id": "3bb5",
+      "name": "",
+      "price": "",
+      "category": "",
+      "color": "",
+      "description": "",
+      "image": ""
+    }
+  ]
+}

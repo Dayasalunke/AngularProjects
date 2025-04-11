@@ -1,0 +1,12 @@
+<h2>Counter App</h2>
+<div class="text-center">
+  <div class=" flex justify-center">
+    <h2 class="pb-10 mb-8 bg-gray-400 text-3xl border-1 h-6 w-30 rounded-2xl">{{count}}</h2>
+  </div>
+    
+  <div>
+    <button (click)="Decrement()" class="btn bg-red-600" [disabled]="count ===  0">Decrement</button>
+    <button (click)="Reset()" class="btn bg-black ">Reset</button>
+    <button (click)="Increment()" class="btn bg-green-600">Increment</button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+body{
+    font-family: sans-serif;
+}
+/* .main{
+    margin-left: 3%;
+    margin-right: 3%;
+} */
+
+.comman-in{
+    border: 1px solid blueviolet;
+}
+
+.comman-pointer{
+    cursor: pointer;
+}

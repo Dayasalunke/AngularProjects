@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg px-4 py-3 bg-dark">
+    <a class="navbar-brand fw-bold  fs-1 text-primary" routerLink="/">E-COMM</a>
+    <div *ngIf = "menuType ==='default'" class="position-relative w-50 mx-auto">
+        <input type="text"class="form-control pe-5"placeholder="Search for Products"/>
+        <button class="btn position-absolute top-0 end-0 h-100 px-3  border-0">
+          Search
+        </button>
+      </div>
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto gap-3">
+      <li><a class="nav-link text-white" routerLink="seller-auth">Seller</a></li>
+      <li><a class="nav-link text-white" routerLink="">Home</a></li>
+      <li><a class="nav-link text-white" href="#">Login</a></li>
+      <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto gap-3">
+      <li><a class="nav-link text-white" routerLink="seller-add-product">Add Product</a></li>
+      <li><a class="nav-link text-white" routerLink="seller-home">List</a></li>
+      <li><a class="nav-link text-white"  (click)="logout()">Logout</a></li>
+      <li><a class="nav-link text-white" href="#">{{sellerName | titlecase}}</a></li>
+    </ul>
+  </div>
+
+  </nav>

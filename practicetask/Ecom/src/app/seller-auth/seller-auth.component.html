@@ -1,0 +1,67 @@
+<div
+  class="seller-auth container vh-100 d-flex justify-content-center align-items-center"
+>
+  <div *ngIf="!showLogin" class="sign-up">
+    <h1 class="mb-4 text-center">Seller Sign-up</h1>
+    <form
+      #sellerSignUp="ngForm"
+      (ngSubmit)="signUp(sellerSignUp.value)"
+      class="d-flex flex-column gap-3"
+    >
+      <input
+        type="text"
+        class="comman-in form-control"
+        ngModel
+        name="name"
+        placeholder="Enter Name"
+      />
+      <input
+        type="password"
+        class="comman-in form-control"
+        ngModel
+        name="password"
+        placeholder="Enter Password"
+      />
+      <input
+        type="email"
+        class="comman-in form-control"
+        ngModel
+        name="email"
+        placeholder="Enter Email"
+      />
+      <button class="button btn btn-primary">SignUp</button>
+      <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openLogin()">Already Have Account? Click to Login</a>
+    </form>
+  </div>
+
+  <!-- Login Area -->
+
+  <div *ngIf="showLogin" class="Login">
+    <h1 class="mb-4 text-center">Seller Login</h1>
+    <form
+      #sellerLogin="ngForm"
+      (ngSubmit)="login(sellerLogin.value)"
+      class="d-flex flex-column gap-3"
+    >
+      <input
+        type="email"
+        class="comman-in form-control"
+        ngModel
+        name="email"
+        placeholder="Enter Email"
+      />
+    
+      <input
+        type="password"
+        class="comman-in form-control"
+        ngModel
+        name="password"
+        placeholder="Enter Password"
+      />
+      <span class="text-danger text-center">{{authError}}</span>
+
+      <button class="button btn btn-primary">Login</button>
+      <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openSignUp()">Don't Have Account? Click to Sign-Up</a>
+    </form>
+  </div>
+</div>

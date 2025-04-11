@@ -1,0 +1,56 @@
+<div
+  class="add-product container vh-100 d-flex justify-content-center align-items-center"
+>
+  <div>
+    <h1 class="text-center text-primary">Update Product</h1>
+    <form
+      #addProduct="ngForm"
+      (ngSubmit)="submit(addProduct.value)"
+      class="d-flex flex-column align-items-center gap-3"
+    >
+      <input
+        type="text"
+        class="comman-in form-control align-items-center"
+        name="name"
+        placeholder="Enter Product Name"
+        ngModel
+      />
+      <input
+        type="text"
+        class="comman-in form-control"
+        name="price"
+        placeholder="Enter Product Price"
+        ngModel
+      />
+      <input
+      type="text"
+      class="comman-in form-control"
+      name="category"
+      placeholder="Enter Product Category"
+      ngModel
+    />
+      <input
+        type="text"
+        class="comman-in form-control"
+        name="color"
+        placeholder="Enter Product color"
+        ngModel
+      />
+      <textarea
+        type="text"
+        class="comman-in form-control"
+        name="description"
+        placeholder="Enter Product Description"
+        ngModel
+      ></textarea>
+      <input
+        type="text"
+        class="comman-in form-control"
+        name="image"
+        placeholder="Enter Product IMG URL"
+        ngModel
+      />
+      <button class="button btn btn-primary w-100">Update Product</button>
+    </form>
+  </div>
+</div>
