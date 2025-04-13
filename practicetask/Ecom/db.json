@@ -174,31 +174,58 @@
   ],
   "products": [
     {
-      "id": "a2f1",
-      "name": "iphone 15",
-      "price": "30000",
-      "category": "mobile",
-      "color": "black",
-      "description": "wojwcnkw",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQPsh73iwGjnDvqunYRIfT8mLYduMS0yISQ&s"
+      "name": "Dell laptop",
+      "price": "110000",
+      "category": "Laptop",
+      "color": "white",
+      "description": "laptop Dell",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg",
+      "id": "ab34"
     },
     {
-      "id": "1a87",
-      "name": "iphone 15",
-      "price": "30000",
-      "category": "mobile",
-      "color": "black",
-      "description": "mobile apple",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQPsh73iwGjnDvqunYRIfT8mLYduMS0yISQ&s"
+      "name": "Watch",
+      "price": "10000",
+      "category": "Watch",
+      "color": "yellow",
+      "description": "Watches water proof",
+      "image": "https://m.media-amazon.com/images/I/61QeNWSSHaL._AC_UY1000_.jpg",
+      "id": "b5bd"
     },
     {
-      "id": "3bb5",
-      "name": "",
-      "price": "",
-      "category": "",
-      "color": "",
-      "description": "",
-      "image": ""
+      "id": "1583",
+      "name": "Dell laptop",
+      "price": "110000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "laptop Dell",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg"
+    },
+    {
+      "name": "Sport shoose",
+      "price": "900",
+      "category": "Shoose",
+      "color": "black",
+      "description": "sports shoose good queality",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ",
+      "id": "ce34"
+    },
+    {
+      "name": "Shirt",
+      "price": "800",
+      "category": "weare",
+      "color": "pink",
+      "description": "shirt",
+      "image": "https://www.jiomart.com/images/product/original/rvsxaqpw52/baleshwar-man-s-solid-slim-fit-casual-shirt-for-men-shirts-rd-xl-product-images-rvsxaqpw52-1-202304221432.jpg?im=Resize=(500,630)",
+      "id": "88c2"
+    },
+    {
+      "id": "a648",
+      "name": "Dell laptop",
+      "price": "110000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "laptop Dell",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg"
     }
   ]
 }

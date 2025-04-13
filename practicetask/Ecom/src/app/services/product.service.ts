@@ -19,6 +19,20 @@ export class ProductService {
   }
 
   getProduct(id:string|number){
-    return this.http.get(`http://localhost:3000/products/${id}`)
+    return this.http.get<product>(`http://localhost:3000/products/${id}`)
   }
+  updateProduct(product:product){
+    console.warn(product);
+     return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product);
+  }
+  popularProducts(){
+    return this.http.get<product[]>(`http://localhost:3000/products?_limit=3`);
+  }
+  trendyProducts(){
+    return this.http.get<product[]>(`http://localhost:3000/products?_limit=8`);
+  }
+  searchProducts(query:string){
+    return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`);
+  }
+
 }

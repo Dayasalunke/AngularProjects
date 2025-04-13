@@ -3,6 +3,7 @@
 >
   <div>
     <h1 class="text-center text-primary">Update Product</h1>
+    <p class="text-success text-center">{{productMessage}}</p>
     <form
       #addProduct="ngForm"
       (ngSubmit)="submit(addProduct.value)"
@@ -13,42 +14,42 @@
         class="comman-in form-control align-items-center"
         name="name"
         placeholder="Enter Product Name"
-        ngModel
+        ngModel="{{productData?.name}}"
       />
       <input
         type="text"
         class="comman-in form-control"
         name="price"
         placeholder="Enter Product Price"
-        ngModel
+        ngModel="{{productData?.price}}"
       />
       <input
       type="text"
       class="comman-in form-control"
       name="category"
       placeholder="Enter Product Category"
-      ngModel
+      ngModel="{{productData?.category}}"
     />
       <input
         type="text"
         class="comman-in form-control"
         name="color"
         placeholder="Enter Product color"
-        ngModel
+        ngModel="{{productData?.color}}"
       />
       <textarea
         type="text"
         class="comman-in form-control"
         name="description"
         placeholder="Enter Product Description"
-        ngModel
+        ngModel="{{productData?.description}}"
       ></textarea>
       <input
         type="text"
         class="comman-in form-control"
         name="image"
         placeholder="Enter Product IMG URL"
-        ngModel
+        ngModel="{{productData?.image}}"
       />
       <button class="button btn btn-primary w-100">Update Product</button>
     </form>
