@@ -192,15 +192,6 @@
       "id": "b5bd"
     },
     {
-      "id": "1583",
-      "name": "Dell laptop",
-      "price": "110000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "laptop Dell",
-      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg"
-    },
-    {
       "name": "Sport shoose",
       "price": "900",
       "category": "Shoose",
@@ -219,13 +210,13 @@
       "id": "88c2"
     },
     {
-      "id": "a648",
-      "name": "Dell laptop",
-      "price": "110000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "laptop Dell",
-      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg"
+      "id": "95c4",
+      "name": "i phone 15",
+      "price": "555555",
+      "category": "mobile",
+      "color": "white",
+      "description": "apple mobile",
+      "image": "https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg"
     }
   ]
 }

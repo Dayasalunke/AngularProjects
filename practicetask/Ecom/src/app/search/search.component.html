@@ -1,64 +1,11 @@
-<div class="row search-item">
+<div class="row search-item" *ngFor="let item of searchResult">
     <div class="col-sm-3">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ" alt="image">
+        <img src="{{item.image}}" alt="image">
     </div>
     <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:10000</b></p>
-        <p>Color:Red</p>
-        <p><span>Color:red</span><span>Category : Mobile</span></p>
-        <p>A product search UI</p>
+        <h6>{{item.name}}</h6>
+        <p><b>Price:{{item.price}}</b></p>
+        <p><span>Color:{{item.color}}</span><span>Category:{{item.category}}</span></p>
+        <p>{{item.description}}</p>
     </div>
 </div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ" alt="image">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:10000</b></p>
-        <p>Color:Red</p>
-        <p><span>Color:red</span><span>Category : Mobile</span></p>
-        <p>A product search UI</p>
-    </div>
-</div>
-
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ" alt="image">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:10000</b></p>
-        <p>Color:Red</p>
-        <p><span>Color:red</span><span>Category : Mobile</span></p>
-        <p>A product search UI</p>
-    </div>
-</div>
-
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ" alt="image">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:10000</b></p>
-        <p>Color:Red</p>
-        <p><span>Color:red</span><span>Category : Mobile</span></p>
-        <p>A product search UI</p>
-    </div>
-</div>
-
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ" alt="image">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:10000</b></p>
-        <p>Color:Red</p>
-        <p><span>Color:red</span><span>Category : Mobile</span></p>
-        <p>A product search UI</p>
-    </div>
-</div>
-
