@@ -16,8 +16,10 @@ h1 a{
 .suggested-result li{
     border: 1px solid #ddd;
     padding: 5px;
+    
 }
 .suggested-result li a{
     cursor: pointer;
     color:blue;
+    text-decoration:none;
 }

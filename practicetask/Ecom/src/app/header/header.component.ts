@@ -38,22 +38,30 @@ export class HeaderComponent implements OnInit {
 
   searchProduct(query: KeyboardEvent) {
     const element = query.target as HTMLInputElement;
-    if (element.value) {
-      this.product.searchProducts(element.value).subscribe((result: product[]) => { 
+    const searchTerm = element.value;
+  
+    if (searchTerm) {
+      this.product.searchProduct(searchTerm).subscribe((result: product[]) => {
         if (result.length > 5) {
           result.length = 5;
         }
         this.searchResult = result;
       });
+    } else {
+      this.searchResult = [];
     }
   }
+  
+  
 
   hideSearch() {
     this.searchResult = undefined; 
   }
-
+  
+  redirectToDetails(id:string){
+  this.route.navigate(['/details/',id]);
+  }
   submitSearch(val: string) {
-    this.route.navigate([`search/${val}`]);
-    this.hideSearch();
+      this.route.navigate([`search/${val}`]);
   }
 }
