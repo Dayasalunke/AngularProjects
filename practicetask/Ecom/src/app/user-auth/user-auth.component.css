@@ -1,0 +1,32 @@
+
+.form-input{
+    height:35px;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet;
+    padding-left: 15px;
+    color: blueviolet;
+    border-radius: 7px;
+}
+.common-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+.form-button{
+    height:35px;
+    cursor: pointer;
+}
+.user-auth h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .user-auth {
+    margin-bottom: 100px; 
+ } 
+.common-form a{
+    color:blueviolet;
+    cursor: pointer;
+}
+
+

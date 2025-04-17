@@ -233,5 +233,65 @@
       "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRErEbH9c6UQdFRG9y6RWbDNavP6RwJ7k3BnjgQwxpTPTyduF2iuyrzAV9f7L5WPTZ2lqqDxVJcMCEst6K-e3dg9t_N-KAHXtw-I4wBQjrwqWbvxJCMZcPHKTs",
       "id": "zcNk8El"
     }
+  ],
+  "users": [
+    {
+      "name": "Salunke Dayanand ",
+      "email": "daya@gamil.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Shankar More",
+      "email": "shanku@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "ajay",
+      "email": "ajay@123gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "chandu",
+      "email": "chand@123.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "Chandu",
+      "email": "chand@123.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "name": "Salunke Dayanand ",
+      "email": "salunke8379@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "id": 8
+    },
+    {
+      "name": "Salunke Dayanand ",
+      "email": "salunke8379@gmail.com",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "name": "Salunke Dayanand ",
+      "email": "daya@gamil.com",
+      "password": "12345678",
+      "id": 10
+    }
   ]
 }
