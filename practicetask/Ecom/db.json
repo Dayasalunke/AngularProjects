@@ -1,181 +1,16 @@
 {
   "seller": [
     {
-      "id": "1835",
-      "name": "Chandu",
-      "password": "abc@1234",
-      "email": "chand@123.com"
-    },
-    {
-      "id": "c88c",
-      "name": "daya",
-      "password": "abc@1234",
-      "email": "daya@gamil.com"
-    },
-    {
-      "id": "cf52",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "5ebf",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "d9be",
-      "email": "daya@gamil.com",
-      "password": "123456"
-    },
-    {
-      "id": "9f1d",
-      "email": "daya@gamil.com",
-      "password": "eeninikdnikdnkinkdnkn"
-    },
-    {
-      "id": "2838",
-      "email": "daya@gamil.com",
-      "password": "abc@1234"
-    },
-    {
-      "id": "ce99",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
       "id": "5439",
       "name": "Salunke Dayanand ",
       "password": "abc@1234",
       "email": "daya@gamil.com"
     },
     {
-      "id": "eaef",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "daya@gamil.com"
-    },
-    {
-      "id": "b425",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke8379@gmail.com"
-    },
-    {
-      "id": "bd38",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke8379@gmail.com"
-    },
-    {
-      "id": "0416",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke8379@gmail.com"
-    },
-    {
-      "id": "443d",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke@gmail.com"
-    },
-    {
-      "id": "969b",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke@gmail.com"
-    },
-    {
-      "id": "52cc",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "dayasalunke@gmail.com"
-    },
-    {
-      "id": "e42c",
-      "name": "dayanand salunke",
-      "password": "1234567",
-      "email": "salunke8379@gmail.com"
-    },
-    {
-      "id": "e73f",
-      "name": "ganesh",
-      "password": "ganu@1234",
-      "email": "ganesh@123gmail.com"
-    },
-    {
-      "id": "7528",
-      "name": "iniiknd",
-      "password": "wniwniwnf",
-      "email": "salunke8379@gmail.com"
-    },
-    {
-      "id": "09a8",
-      "name": "",
-      "password": "",
-      "email": ""
-    },
-    {
-      "id": "ad80",
-      "name": "Salunke Dayanand ",
-      "password": "1234",
-      "email": "chand@123.com"
-    },
-    {
-      "id": "e910",
-      "name": "Ranjit Tat",
-      "password": "123456",
-      "email": "chand@123.com"
-    },
-    {
-      "id": "edd3",
-      "name": "baju",
-      "password": "baju",
-      "email": "baju@gmail.com"
-    },
-    {
-      "id": "0d7e",
-      "name": "baju",
-      "password": "baju",
-      "email": "baju@gamail.com"
-    },
-    {
-      "id": "423a",
-      "name": "baju",
-      "password": "123456",
-      "email": "baju@gmail.com"
-    },
-    {
-      "id": "6bd8",
-      "name": "baju",
-      "password": "12345",
-      "email": "chand@123.com"
-    },
-    {
-      "id": "4fd0",
       "name": "baju",
       "password": "1234",
-      "email": "baju@123.gmail.com"
-    },
-    {
-      "id": "a5a8",
-      "name": "baju",
-      "password": "111111",
-      "email": "baju@123gmail.com"
-    },
-    {
-      "id": "80c2",
-      "name": "bajarang",
-      "password": "baju",
-      "email": "bajarang@gmail.com"
-    },
-    {
-      "name": "sachin",
-      "password": "12345",
-      "email": "sachin@gmail.com",
-      "id": "ZuDL1XX"
+      "email": "salunke8379@gmail.com",
+      "id": "F8figM9"
     }
   ],
   "products": [
@@ -216,15 +51,6 @@
       "image": "https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg"
     },
     {
-      "id": "3109",
-      "name": "iphone 14",
-      "price": "78678",
-      "category": "mobile",
-      "color": "white",
-      "description": "apple mobile",
-      "image": "https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg"
-    },
-    {
       "name": "charger",
       "price": "7766",
       "category": "Accessories",
@@ -232,6 +58,15 @@
       "description": "fast charger",
       "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRErEbH9c6UQdFRG9y6RWbDNavP6RwJ7k3BnjgQwxpTPTyduF2iuyrzAV9f7L5WPTZ2lqqDxVJcMCEst6K-e3dg9t_N-KAHXtw-I4wBQjrwqWbvxJCMZcPHKTs",
       "id": "zcNk8El"
+    },
+    {
+      "name": "Pen",
+      "price": "30",
+      "category": "Study material",
+      "color": "blue",
+      "description": "ball pen",
+      "image": "https://www.shutterstock.com/image-photo/blue-pen-isolated-on-white-260nw-557418118.jpg",
+      "id": "OjJk5ma"
     }
   ],
   "users": [
@@ -252,46 +87,6 @@
       "email": "ajay@123gmail.com",
       "password": "12345",
       "id": 3
-    },
-    {
-      "name": "chandu",
-      "email": "chand@123.com",
-      "password": "12345",
-      "id": 4
-    },
-    {
-      "name": "Chandu",
-      "email": "chand@123.com",
-      "password": "12345",
-      "id": 5
-    },
-    {
-      "name": "Salunke Dayanand ",
-      "email": "salunke8379@gmail.com",
-      "password": "12345",
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "id": 8
-    },
-    {
-      "name": "Salunke Dayanand ",
-      "email": "salunke8379@gmail.com",
-      "password": "123",
-      "id": 9
-    },
-    {
-      "name": "Salunke Dayanand ",
-      "email": "daya@gamil.com",
-      "password": "12345678",
-      "id": 10
     }
   ]
 }
