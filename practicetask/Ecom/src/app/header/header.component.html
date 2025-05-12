@@ -40,13 +40,16 @@
         <a class="nav-link text-white" routerLink="seller-auth">Seller</a>
       </li>
       <li><a class="nav-link text-white" routerLink="">Home</a></li>
-      <li>
-        <a class="nav-link text-white" routerLink="/user-auth">{{userName | titlecase}}</a>
-      </li>
-      <li>
-        <a class="nav-link text-white cursor-pointer" (click)="userLogout()">Logout</a>
-      </li>
-      <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
+       <li>
+          <a routerLink="user-auth">{{userName | titlecase}}</a>
+       </li>
+       <li>
+          <a routerLink="user-auth">Logout</a>
+       </li>
+       <li>
+        <a href="#">Cart(0)</a>
+       </li>
+
     </ul>
     <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto gap-3">
       <li>
