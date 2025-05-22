@@ -15,17 +15,8 @@
   ],
   "products": [
     {
-      "name": "Watch",
-      "price": "10000",
-      "category": "Watch",
-      "color": "yellow",
-      "description": "Watches water proof",
-      "image": "https://m.media-amazon.com/images/I/61QeNWSSHaL._AC_UY1000_.jpg",
-      "id": "b5bd"
-    },
-    {
       "name": "Sport shoose",
-      "price": "900",
+      "price": "-33333",
       "category": "Shoose",
       "color": "black",
       "description": "sports shoose good queality",
