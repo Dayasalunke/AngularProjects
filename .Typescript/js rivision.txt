@@ -57,7 +57,7 @@ iv.  what is ES6 module system ?
       we can export lot of values but only one default values.
       we can import all the values within {} but default values doesn't need any braces 
 
-In JS, there are datatypes (number,string,boolean,undefined,null ,array,object)
+In JS, there are dataTypes (number,string,boolean,undefined,null ,array,object)
 
 
 
