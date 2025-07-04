@@ -16,7 +16,7 @@
   "products": [
     {
       "name": "Sport shoose",
-      "price": "-33333",
+      "price": "---4--4it904it094it",
       "category": "Shoose",
       "color": "black",
       "description": "sports shoose good queality",
@@ -65,19 +65,19 @@
       "name": "Salunke Dayanand ",
       "email": "daya@gamil.com",
       "password": "12345",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "Shankar More",
       "email": "shanku@gmail.com",
       "password": "12345",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "ajay",
       "email": "ajay@123gmail.com",
       "password": "12345",
-      "id": 3
+      "id": "3"
     }
   ]
 }
