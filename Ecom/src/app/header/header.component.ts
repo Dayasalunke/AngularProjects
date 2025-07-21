@@ -46,21 +46,20 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['/user-auth']);
   }
 
-  searchProduct(query: KeyboardEvent) {
-    const element = query.target as HTMLInputElement;
-    const searchTerm = element.value;
-  
-    if (searchTerm) {
-      this.product.searchProduct(searchTerm).subscribe((result: product[]) => {
-        if (result.length > 5) {
-          result.length = 5;
-        }
-        this.searchResult = result;
-      });
-    } else {
-      this.searchResult = [];
-    }
+searchProduct(event: KeyboardEvent) {
+  const query = (event.target as HTMLInputElement).value;
+
+  if (query && query.trim().length > 0) {
+    this.product.searchProducts(query).subscribe((result) => {
+      // Filter only products where name includes query
+      this.searchResult = result.filter((item) =>
+        item.name.toLowerCase().includes(query.toLowerCase())
+      );
+    });
+  } else {
+    this.searchResult = [];
   }
+}
   
   
 
@@ -71,7 +70,12 @@ export class HeaderComponent implements OnInit {
   redirectToDetails(id:string){
   this.route.navigate(['/details/',id]);
   }
-  submitSearch(val: string) {
-      this.route.navigate([`search/${val}`]);
-  }
+submitSearch(query: string) {
+  if (!query.trim()) return; // prevent empty search
+
+  this.route.navigate(['/search'], {
+    queryParams: { query }
+  });
+}
+
 }
