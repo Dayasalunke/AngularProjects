@@ -1,38 +1,23 @@
-<div class="container py-4">
-  <h4 class="mb-4">Search Results</h4>
-
-  <!-- Show Results If Found -->
-  <div *ngIf="searchResult.length > 0; else noResults">
-    <div class="row search-item mb-4 p-3 border rounded shadow-sm" *ngFor="let item of searchResult">
-      
-      <!-- 📷 Product Image -->
-      <div class="col-sm-3">
-        <a [routerLink]="'/details/' + item.id">
-          <img [src]="item.image" [alt]="item.name" class="img-fluid rounded" />
-        </a>
-      </div>
-
-      <!-- 📋 Product Details -->
-      <div class="col-sm-9 ps-sm-4 mt-3 mt-sm-0">
-        <h5 class="fw-bold mb-2">
-          <a [routerLink]="'/details/' + item.id" class="text-decoration-none text-dark">
-            {{ item.name }}
-          </a>
-        </h5>
-        <p class="mb-1"><strong>Price:</strong> ₹{{ item.price }}</p>
-        <p class="mb-1">
-          <span><strong>Color:</strong> {{ item.color }}</span> |
-          <span><strong>Category:</strong> {{ item.category }}</span>
-        </p>
-        <p class="text-muted mb-0">{{ item.description }}</p>
-      </div>
-    </div>
+<div class="row search-item" *ngFor="let item of searchResult">
+  <div class="col-sm-3">
+    <a routerLink="/details/{{item.id}}">
+      <img src="{{item.image}}" alt="">
+    </a>
   </div>
-
-  <!-- 🛑 No Results Template -->
+  <div class="col-sm-8 details">
+    <h6> <a routerLink="/details/{{item.id}}" class="text-decoration-none">
+     {{item.name}}</a></h6>
+    <p><b>Price:{{item.price}}</b></p>
+    <p><span>color:{{item.color}}</span><span>category:{{item.category}}</span></p>
+    <p>item.description</p>
+  </div>
+    <!-- 🛑 No Results Template -->
   <ng-template #noResults>
     <div class="text-center text-muted mt-5">
       <h5>No matching products found.</h5>
     </div>
   </ng-template>
 </div>
+
+
+

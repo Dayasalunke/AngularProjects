@@ -50,7 +50,7 @@ searchProduct(event: KeyboardEvent) {
   const query = (event.target as HTMLInputElement).value;
 
   if (query && query.trim().length > 0) {
-    this.product.searchProducts(query).subscribe((result) => {
+    this.product.searchProduct(query).subscribe((result) => {
       // Filter only products where name includes query
       this.searchResult = result.filter((item) =>
         item.name.toLowerCase().includes(query.toLowerCase())
@@ -68,14 +68,12 @@ searchProduct(event: KeyboardEvent) {
   }
   
   redirectToDetails(id:string){
-  this.route.navigate(['/details/',id]);
+  this.route.navigate(['/details/'+ id]);
   }
-submitSearch(query: string) {
-  if (!query.trim()) return; // prevent empty search
+submitSearch(val: string) {
+  this.route.navigate([`search/${val}`])
+    this.searchResult = []; // clear suggestions
 
-  this.route.navigate(['/search'], {
-    queryParams: { query }
-  });
 }
 
 }

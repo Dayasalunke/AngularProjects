@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
-
 @Component({
   selector: 'app-search',
   standalone: false,
@@ -10,18 +9,15 @@ import { product } from '../data-type';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  searchResult: product[] = [];
-
-  constructor(private route: ActivatedRoute, private product: ProductService) {}
+  searchResult:product|any;
+  constructor(private activeRoute:ActivatedRoute, private product:ProductService) { }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe((params) => {
-      const query = params['query'];
-      if (query) {
-        this.product.searchProducts(query).subscribe((res) => {
-          this.searchResult = res;
-        });
-      }
-    });
-  }
+   let query = this.activeRoute.snapshot.paramMap.get('query');
+   console.warn(query);
+   query && this.product.searchProduct(query).subscribe((result)=>{
+    this.searchResult = result;
+
+   })
+}
 }

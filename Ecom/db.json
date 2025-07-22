@@ -58,6 +58,33 @@
       "description": "ball pen",
       "image": "https://www.shutterstock.com/image-photo/blue-pen-isolated-on-white-260nw-557418118.jpg",
       "id": "OjJk5ma"
+    },
+    {
+      "name": "Dell Laptop",
+      "price": "66000",
+      "category": "Laptop",
+      "color": "gray",
+      "description": "Good quality",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/14-2-in-1-7440-intel/media-gallery/notebook-inspiron-14-7440-t-ice-blue-fpr-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=353&qlt=100,1&resMode=sharp2&size=353,402&chrss=full",
+      "id": "zzZgHPC"
+    },
+    {
+      "name": "ASUS Laptop",
+      "price": "40000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Asuas lap tops",
+      "image": "https://m.media-amazon.com/images/I/71AfIVui-wL._SX679_.jpg",
+      "id": "mZ452l-"
+    },
+    {
+      "name": "Oneplus Nordce4",
+      "price": "25000",
+      "category": "Mobile",
+      "color": "navy blue",
+      "description": "camera phone",
+      "image": "https://m.media-amazon.com/images/I/61nxQ62qglL._SX679_.jpg",
+      "id": "e8fbzJ3"
     }
   ],
   "users": [
