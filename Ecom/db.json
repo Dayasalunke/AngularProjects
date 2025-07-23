@@ -11,6 +11,12 @@
       "password": "1234",
       "email": "salunke8379@gmail.com",
       "id": "F8figM9"
+    },
+    {
+      "name": "Shankar",
+      "password": "1234",
+      "email": "shankar@gmail.com",
+      "id": "EiWUE7M"
     }
   ],
   "products": [
@@ -89,22 +95,34 @@
   ],
   "users": [
     {
-      "name": "Salunke Dayanand ",
+      "name": "Dayanand",
+      "email": "salunke8379@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "shankar",
+      "email": "shankar123@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Ranjit ",
+      "email": "ranjit@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "ganesh",
+      "email": "ganesh@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "Dayanand",
       "email": "daya@gamil.com",
-      "password": "12345",
-      "id": "1"
-    },
-    {
-      "name": "Shankar More",
-      "email": "shanku@gmail.com",
-      "password": "12345",
-      "id": "2"
-    },
-    {
-      "name": "ajay",
-      "email": "ajay@123gmail.com",
-      "password": "12345",
-      "id": "3"
+      "password": "1234",
+      "id": 5
     }
   ]
 }

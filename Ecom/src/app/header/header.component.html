@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg px-4 py-3 bg-dark mb-5">
   <a class="navbar-brand fw-bold fs-1 text-primary" routerLink="/">E-COMM</a>
+
+  <!-- Search Bar for Default Menu -->
   <div *ngIf="menuType === 'default'" class="position-relative w-50 mx-auto">
     <input
       type="text"
@@ -10,58 +12,47 @@
       class="form-control pe-5"
     />
     <button
+      type="button"
       class="btn position-absolute top-0 end-0 h-100 px-3 border-0"
       (click)="submitSearch(searchInput.value)"
     >
       Search
     </button>
-    <ul class="suggested-result list-unstyled" *ngIf="searchResult">
-      <li *ngFor="let item of searchResult" class="text-decoration-none ps-3">
-        <a (mousedown)="redirectToDetails(item.id.toString())">{{
-          item.name
-        }}</a>
+
+    <ul class="suggested-result list-unstyled" *ngIf="searchResult?.length">
+      <li *ngFor="let item of searchResult" class="ps-3">
+        <a (mousedown)="redirectToDetails(item.id.toString())">
+          {{ item.name }}
+        </a>
       </li>
     </ul>
   </div>
 
+  <!-- Menu Switch: default | user | seller -->
   <div [ngSwitch]="menuType">
+    <!-- Default Menu -->
     <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto gap-3">
-      <li>
-        <a class="nav-link text-white" routerLink="seller-auth">Seller</a>
-      </li>
-      <li><a class="nav-link text-white" routerLink="">Home</a></li>
-      <li>
-        <a class="nav-link text-white" routerLink="/user-auth">Login/Sign-up</a>
-      </li>
+      <li><a class="nav-link text-white" routerLink="/seller-auth">Seller</a></li>
+      <li><a class="nav-link text-white" routerLink="/">Home</a></li>
+      <li><a class="nav-link text-white" routerLink="/user-auth">Login/Sign-up</a></li>
       <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
     </ul>
+    
+    <!-- User Menu -->
     <ul *ngSwitchCase="'user'" class="navbar-nav ms-auto gap-3">
-      <li>
-        <a class="nav-link text-white" routerLink="seller-auth">Seller</a>
-      </li>
-      <li><a class="nav-link text-white" routerLink="">Home</a></li>
-       <li>
-          <a routerLink="user-auth">{{userName | titlecase}}</a>
-       </li>
-       <li>
-          <a routerLink="user-auth">Logout</a>
-       </li>
-       <li>
-        <a href="#">Cart(0)</a>
-       </li>
-
+      <li><a class="nav-link text-white" routerLink="/seller-auth">Seller</a></li>
+      <li><a class="nav-link text-white" routerLink="/">Home</a></li>
+      <li><a class="nav-link text-white" routerLink="/user-auth">{{ userName | titlecase }}</a></li>
+      <li><a class="nav-link text-white" (click)="userLogout()">Logout</a></li>
+      <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
     </ul>
+
+    <!-- Seller Menu -->
     <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto gap-3">
-      <li>
-        <a class="nav-link text-white" routerLink="seller-add-product"
-          >Add Product</a
-        >
-      </li>
-      <li><a class="nav-link text-white" routerLink="seller-home">List</a></li>
+      <li><a class="nav-link text-white" routerLink="/seller-add-product">Add Product</a></li>
+      <li><a class="nav-link text-white" routerLink="/seller-home">List</a></li>
       <li><a class="nav-link text-white" (click)="logout()">Logout</a></li>
-      <li>
-        <a class="nav-link text-white" href="#">{{ sellerName | titlecase }}</a>
-      </li>
+      <li><a class="nav-link text-white" href="#">{{ sellerName | titlecase }}</a></li>
     </ul>
   </div>
 </nav>
