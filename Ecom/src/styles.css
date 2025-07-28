@@ -24,3 +24,6 @@ body{
   color: black;
   border-radius: 5px;
 }
+.invalid-input{
+    margin-top: -20px;
+}

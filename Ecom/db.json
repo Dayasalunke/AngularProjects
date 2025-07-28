@@ -17,12 +17,62 @@
       "password": "1234",
       "email": "shankar@gmail.com",
       "id": "EiWUE7M"
+    },
+    {
+      "name": "Baburao",
+      "password": "1234",
+      "email": "babu@gmail.com",
+      "id": "NJhtkK1"
+    },
+    {
+      "name": "rushi",
+      "password": "1234",
+      "email": "rushi@gmail.com",
+      "id": "_SR9YOl"
+    },
+    {
+      "name": "ubiuiuih",
+      "password": "",
+      "email": "",
+      "id": "1oHFnGE"
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": "2Yf7ElJ"
+    },
+    {
+      "name": "Dayanand",
+      "password": "",
+      "email": "",
+      "id": "toH0PNo"
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": "f-DcAD9"
+    },
+    {
+      "name": "",
+      "id": "1Et-1S4"
+    },
+    {
+      "name": "",
+      "id": "KUsvKgL"
+    },
+    {
+      "name": "Dayanand",
+      "email": "salunke8379@gmail.com",
+      "password": "11111",
+      "id": "aNhTfN6"
     }
   ],
   "products": [
     {
       "name": "Sport shoose",
-      "price": "2000",
+      "price": "560",
       "category": "Shoose",
       "color": "black",
       "description": "sports shoose good queality",
@@ -91,13 +141,76 @@
       "description": "camera phone",
       "image": "https://m.media-amazon.com/images/I/61nxQ62qglL._SX679_.jpg",
       "id": "e8fbzJ3"
+    },
+    {
+      "name": "Classmate Notebook",
+      "price": "500",
+      "category": "Notebook",
+      "color": "Yellow",
+      "description": "classmate notebook are good ",
+      "image": "https://www.quickpantry.in/cdn/shop/products/classmate-notebook-single-line-size-24-x-18-cm-172-pages-quick-pantry.jpg?v=1710538893",
+      "id": "mLz8ZKD"
+    },
+    {
+      "name": "Toy jeep",
+      "price": "3000",
+      "category": "toy",
+      "color": "red",
+      "description": "jeep toy for childern",
+      "image": "https://toyzone.in/cdn/shop/files/IMG_4331.jpg?v=1737181068",
+      "id": "MXHdSmC"
+    },
+    {
+      "name": "charger",
+      "price": "10000",
+      "category": "electronic",
+      "color": "white",
+      "description": "wiohwihfd",
+      "image": "https://m.media-amazon.com/images/I/31n3bqak-SL.jpg",
+      "id": "kCkPU6t"
+    },
+    {
+      "name": "Dell Mouse",
+      "price": "500",
+      "category": "Accessories",
+      "color": "black",
+      "description": "Dell Supports",
+      "image": "https://d23rlvd1yebk9y.cloudfront.net/pub/media/catalog/product/cache/a58e64ec630f4d32db43809c2e2f77b2/l/_/l_lkj.jpg",
+      "id": "hLvDHYl"
+    },
+    {
+      "name": "charger",
+      "price": "199",
+      "category": "Accessories",
+      "color": "red",
+      "description": "red charger onepluse",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRppv52khEnjhcSpATQRB1JBg55JgtJpUzn-zCWX-Bm96mFarNpTfzLcujHrzjhSuzLcWJaZqRF_KjdGBSXrWH08d_6QAoqe7wngMt0xlKs4RdV-M61kz3XEA",
+      "id": "ub3nIp4"
+    },
+    {
+      "name": "AirBuds",
+      "price": "3500",
+      "category": "Accessories",
+      "color": "pink",
+      "description": "Godd Queality",
+      "image": "https://www.boat-lifestyle.com/cdn/shop/products/121-pro-BG_600x.gif?v=1665492449",
+      "id": "mjCmhBa"
+    },
+    {
+      "name": "Fan",
+      "price": "5000",
+      "category": "Electronic",
+      "color": "gray",
+      "description": "Orient Super Speed fan",
+      "image": "https://img1.gadgetsnow.com/gd/images/products/additional/large/G636300_View_1/home-appliances/fans/crompton-highspeed-ameo-1200mm-48-inch-ceiling-fan-copper-gleam-star-rated-energy-efficient-fan.jpg",
+      "id": "qHF_i7U"
     }
   ],
   "users": [
     {
       "name": "Dayanand",
       "email": "salunke8379@gmail.com",
-      "password": "123",
+      "password": "1234",
       "id": 1
     },
     {
@@ -122,6 +235,55 @@
       "name": "Dayanand",
       "email": "daya@gamil.com",
       "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Dayanand",
+      "email": "dayasalunke@gmail.com",
+      "password": "1111",
+      "id": 6
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "salunke8379@gmail.com",
+      "address": "255 ameerpeth abcd.",
+      "contact": "9579038963",
+      "totalPrice": 660,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "salunke8379@gmail.com",
+      "address": "255 ameerpeth abcd.",
+      "contact": "9579038963",
+      "totalPrice": 660,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "salunke8379@gmail.com",
+      "address": "255 ameerpeth abcd.",
+      "contact": "9579038963",
+      "totalPrice": 660,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "email": "salunke8379@gmail.com",
+      "address": "255 ameerpeth abcd.",
+      "contact": "9579038963",
+      "totalPrice": 556215,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "email": "salunke8379@gmail.com",
+      "address": "255 ameerpeth abcd.",
+      "contact": "9579038963",
+      "totalPrice": 67160,
+      "userId": 1,
       "id": 5
     }
   ]

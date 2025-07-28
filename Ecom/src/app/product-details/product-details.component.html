@@ -15,8 +15,14 @@
       </div>
       <h6>Category: {{ productData.category }}</h6>
       <h6>Description: {{ productData.description }}</h6>
-      <button class="btn btn-warning h-25 me-2">Add to Cart</button>
-      <button class="btn btn-outline-primary h-25 ms-2">Buy Now</button>
+     <button class="btn btn-outline-primary h-25 ms-2 me-4">Buy Now</button>
+
+     <button *ngIf="removeCart" class="btn btn-warning h-25 me-2"(click)="removeToCart(productData.id)">Remove to Cart</button>
+           
+      <button *ngIf="!removeCart" class="btn btn-warning h-25 me-2"(click)="addToCart()">Add to Cart</button>
+
+
+
       <div class="quantity-group">
         <button class=" border border-0 bg-dark text-white p-2" (click)="handleQuantity('min')">-</button>
         <input class=" border border-0  text-center bg-warning p-2" type="text" value="{{ productQuantity }}" />

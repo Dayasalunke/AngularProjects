@@ -3,7 +3,7 @@
 >
   <div>
     <h1 class="text-center text-primary">Add New Product</h1>
-    <p class="text-success text-center">{{addProductMessage}}</p>
+    <p class="text-center" [ngClass]="messageColorClass">{{ addProductMessage }}</p>
     <form
       #addProduct="ngForm"
       (ngSubmit)="submit(addProduct.value)"
@@ -22,6 +22,8 @@
         name="price"
         placeholder="Enter Product Price"
         ngModel
+        required
+        min="1"
       />
       <input
       type="text"

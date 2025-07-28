@@ -35,7 +35,7 @@
       <li><a class="nav-link text-white" routerLink="/seller-auth">Seller</a></li>
       <li><a class="nav-link text-white" routerLink="/">Home</a></li>
       <li><a class="nav-link text-white" routerLink="/user-auth">Login/Sign-up</a></li>
-      <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
+      <li><a class="nav-link text-white" href="#">Cart({{cartItems}})</a></li>
     </ul>
     
     <!-- User Menu -->
@@ -44,7 +44,7 @@
       <li><a class="nav-link text-white" routerLink="/">Home</a></li>
       <li><a class="nav-link text-white" routerLink="/user-auth">{{ userName | titlecase }}</a></li>
       <li><a class="nav-link text-white" (click)="userLogout()">Logout</a></li>
-      <li><a class="nav-link text-white" href="#">Cart(0)</a></li>
+      <li><a class="nav-link text-white" routerLink="cart-page">Cart({{cartItems}})</a></li>
     </ul>
 
     <!-- Seller Menu -->

@@ -8,11 +8,44 @@ export interface login{
     password:string
 }
 export interface product{
+    userId: any,
+    length: any,
+    productId: number | undefined,
     name:string,
     price:number,
     category:string,
     color:string,
     description:string,
     image:string,
-    id:number|string
+    id:number,
+    quantity:undefined | number
+
+}
+export interface cart{
+    name:string,
+    price:number,
+    category:string,
+    color:string,
+    description:string,
+    image:string,
+    id:number | undefined,
+    quantity:undefined | number,
+    userId: number,
+    productId:undefined | number
+}
+export interface priceSummary{
+    price : number,
+    discount:number,
+    tax:number,
+    delivery:number,
+    total:number
+}
+export interface order{
+    email :string,
+    address :string,
+    contact :string,
+    totalPrice:number,
+    userId:string,
+    id:number | undefined
+    image?: string;
 }

@@ -28,3 +28,8 @@
     color:blueviolet;
     cursor: pointer;
 }
+.error-text {
+  margin-top: -10px;  /* Very small space */
+  margin-bottom: -10px;
+  font-size: 16px;
+}

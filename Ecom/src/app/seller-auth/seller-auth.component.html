@@ -10,58 +10,85 @@
     >
       <input
         type="text"
-        class="comman-in form-control"
+        class="comman-form form-control"
         ngModel
         name="name"
         placeholder="Enter Name"
+        #name="ngModel"
+        required
       />
-      <input
-        type="password"
-        class="comman-in form-control"
-        ngModel
-        name="password"
-        placeholder="Enter Password"
-      />
-      <input
+      <p class="text-danger error-text" *ngIf="name.invalid && name.touched">Name is required</p>
+       <input
         type="email"
-        class="comman-in form-control"
+        class="comman-form form-control"
         ngModel
         name="email"
         placeholder="Enter Email"
+        #email="ngModel"
+        required
+        email
       />
-      <button class="button btn btn-primary">SignUp</button>
-      <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openLogin()">Already Have Account? Click to Login</a>
+      <p class="text-danger error-text" *ngIf="email.invalid && email.touched">Enter a valid email</p>
+      <input
+        type="password"
+        class="comman-form form-control"
+        ngModel
+        name="password"
+        placeholder="Enter Password"
+        #password="ngModel"
+        required
+        minlength="4"
+        maxlength="20"
+      />
+        <p class="text-danger error-text" *ngIf="password.invalid && password.touched">
+        Password must be 4-20 characters
+       </p>
+
+    <button class="button btn btn-primary" [disabled]="sellerSignUp.invalid">SignUp</button>
+    <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openLogin()">Already Have Account? Click to Login</a>
     </form>
   </div>
 
   <!-- Login Area -->
 
-  <div *ngIf="showLogin" class="Login">
-    <h1 class="mb-4 text-center">Seller Login</h1>
-    <form
-      #sellerLogin="ngForm"
-      (ngSubmit)="login(sellerLogin.value)"
-      class="d-flex flex-column gap-3"
-    >
-      <input
-        type="email"
-        class="comman-in form-control"
-        ngModel
-        name="email"
-        placeholder="Enter Email"
-      />
-    
-      <input
-        type="password"
-        class="comman-in form-control"
-        ngModel
-        name="password"
-        placeholder="Enter Password"
-      />
-      <span class="text-danger text-center">{{authError}}</span>
+<div *ngIf="showLogin" class="Login">
+  <h1 class="mb-4 text-center">Seller Login</h1>
+  <form
+    #sellerLogin="ngForm"
+    (ngSubmit)="login(sellerLogin.value)"
+    class="d-flex flex-column gap-3"
+  >
+    <input
+      type="email"
+      class="comman-form form-control"
+      ngModel
+      name="email"
+      placeholder="Enter Email"
+      #loginEmail="ngModel"
+      required
+      email
+    />
+    <p class="text-danger error-text" *ngIf="loginEmail.invalid && loginEmail.touched">Enter a valid email</p>
 
-      <button class="button btn btn-primary">Login</button>
-      <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openSignUp()">Don't Have Account? Click to Sign-Up</a>
+    <input
+      type="password"
+      class="comman-form form-control"
+      ngModel
+      name="password"
+      placeholder="Enter Password"
+      #loginPassword="ngModel"
+      required
+      minlength="4"
+      maxlength="20"
+    />
+    <p class="text-danger error-text" *ngIf="loginPassword.invalid && loginPassword.touched">
+      Password must be 4-20 characters
+    </p>
+
+    <span class="text-danger text-center">{{ authError }}</span>
+
+    <button class="button btn btn-primary" [disabled]="sellerLogin.invalid">Login</button>
+    <a class="mt-1 text-primary text-decoration-none comman-pointer" (click)="openSignUp()">Don't Have Account? Click to Sign-Up</a>
     </form>
   </div>
 </div>

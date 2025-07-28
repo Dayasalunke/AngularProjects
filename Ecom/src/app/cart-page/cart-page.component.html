@@ -1,0 +1,38 @@
+<div class="cart-page container">
+  <h1 class="text-center mb-4">Cart Page</h1>
+
+  <div class="row">
+    <div class="col-md-10 col-lg-8 details">
+      <!-- Cart Item -->
+      <ul *ngFor="let cart of cartData"
+        class="d-flex align-items-center justify-content-between list-unstyled py-3 px-2 mb-3 border-bottom" 
+      >
+        <li>
+          <img
+            src="{{cart.image}}"
+            alt="cart.image"
+          />
+        </li>
+        <li><span>{{cart.name}}</span></li>
+        <li><span> Price : {{cart.price}}</span></li>
+        <li><span>Quantity :{{cart.quantity}}</span></li>
+        <li>
+          <button class="btn btn-warning text-dark rounded-3">
+            Remove from cart
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-4 summary">
+      <h3 class="text-center">Summary</h3>
+      <ul>
+        <li><span>Amount</span><span>{{priceSummary.price}}</span></li>
+        <li><span>Tax</span><span>{{priceSummary.tax}}</span></li>
+        <li><span>Delivery</span><span>{{priceSummary.delivery}}</span></li>
+        <li><span>Discount</span><span>{{priceSummary.discount}}</span></li>
+        <li> <span> <h4>Total</h4></span> <span><h4>{{priceSummary.total}}</h4></span></li>
+        <button class="btn btn-primary text-white rounded-3 w-100" (click)="checkout()">Checkout</button>
+      </ul>
+    </div>
+  </div>
+</div>

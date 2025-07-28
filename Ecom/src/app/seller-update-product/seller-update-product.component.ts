@@ -21,19 +21,26 @@ export class SellerUpdateProductComponent implements OnInit {
       this.productData = data;
       });
     }
-    submit(data:product){
-      console.warn(data)
-      if(this.productData){
-        data.id = this.productData.id;
-      }
-      this.product.updateProduct(data).subscribe((result) => {
-        if(result){
-          this.productMessage="Product has updated";
-        }
-      });
-      setTimeout(() =>{
-        this.productMessage=undefined;
-      },3000)
+submit(data: product) {
+  console.warn(data);
+  if (!data.price || data.price <= 0) {
+    this.productMessage = "Price must be greater than 0";
+    setTimeout(() => (this.productMessage = undefined), 3000);
+    return;
+  }
 
+  if (this.productData) {
+    data.id = this.productData.id;
+  }
+
+  this.product.updateProduct(data).subscribe((result) => {
+    if (result) {
+      this.productMessage = "Product has been updated";
     }
+  });
+
+  setTimeout(() => {
+    this.productMessage = undefined;
+  }, 3000);
+}
 }
