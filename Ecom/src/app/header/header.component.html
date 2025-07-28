@@ -2,14 +2,21 @@
   <a class="navbar-brand fw-bold fs-1 text-primary" routerLink="/">E-COMM</a>
 
   <!-- Search Bar for Default Menu -->
-  <div *ngIf="menuType === 'default'" class="position-relative w-50 mx-auto">
+<div 
+  *ngIf="menuType !== 'seller'" 
+  class="position-relative mx-auto"
+  [ngClass]="{
+    'w-50': menuType === 'default',
+    'w-25': menuType === 'user'
+    }"
+>
     <input
       type="text"
       #searchInput
       (keyup)="searchProduct($event)"
       (blur)="hideSearch()"
       placeholder="Search for Products"
-      class="form-control pe-5"
+      class="form-control pe-4"
     />
     <button
       type="button"
@@ -43,8 +50,12 @@
       <li><a class="nav-link text-white" routerLink="/seller-auth">Seller</a></li>
       <li><a class="nav-link text-white" routerLink="/">Home</a></li>
       <li><a class="nav-link text-white" routerLink="/user-auth">{{ userName | titlecase }}</a></li>
+
+      <li><a class="nav-link text-white" routerLink="/my-orders">My Orders</a></li>
+
       <li><a class="nav-link text-white" (click)="userLogout()">Logout</a></li>
-      <li><a class="nav-link text-white" routerLink="cart-page">Cart({{cartItems}})</a></li>
+
+      <li><a class="nav-link text-white" [routerLink]="cartItems >0?'cart-page':null">Cart({{cartItems}})</a></li>
     </ul>
 
     <!-- Seller Menu -->

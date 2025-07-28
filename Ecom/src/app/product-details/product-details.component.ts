@@ -52,7 +52,7 @@ export class ProductDetailsComponent implements OnInit {
           let item = result.filter((item: product) =>
           productId === item.productId?.toString()
           );
-console.log(item.length)
+// console.log(item.length)
          if (item.length) {
          this.cartData = item[0];
          this.removeCart = true;

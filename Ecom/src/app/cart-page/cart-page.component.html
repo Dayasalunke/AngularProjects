@@ -17,7 +17,7 @@
         <li><span> Price : {{cart.price}}</span></li>
         <li><span>Quantity :{{cart.quantity}}</span></li>
         <li>
-          <button class="btn btn-warning text-dark rounded-3">
+          <button class="btn btn-warning text-dark rounded-3" (click)="removeToCart(cart.id)">
             Remove from cart
           </button>
         </li>

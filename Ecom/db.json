@@ -1,30 +1,6 @@
 {
   "seller": [
     {
-      "id": "5439",
-      "name": "Salunke Dayanand ",
-      "password": "abc@1234",
-      "email": "daya@gamil.com"
-    },
-    {
-      "name": "baju",
-      "password": "1234",
-      "email": "salunke8379@gmail.com",
-      "id": "F8figM9"
-    },
-    {
-      "name": "Shankar",
-      "password": "1234",
-      "email": "shankar@gmail.com",
-      "id": "EiWUE7M"
-    },
-    {
-      "name": "Baburao",
-      "password": "1234",
-      "email": "babu@gmail.com",
-      "id": "NJhtkK1"
-    },
-    {
       "name": "rushi",
       "password": "1234",
       "email": "rushi@gmail.com",
@@ -59,35 +35,13 @@
       "id": "1Et-1S4"
     },
     {
-      "name": "",
-      "id": "KUsvKgL"
-    },
-    {
       "name": "Dayanand",
       "email": "salunke8379@gmail.com",
-      "password": "11111",
+      "password": "1234",
       "id": "aNhTfN6"
     }
   ],
   "products": [
-    {
-      "name": "Sport shoose",
-      "price": "560",
-      "category": "Shoose",
-      "color": "black",
-      "description": "sports shoose good queality",
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9c8fSt45HmJtWcu_4-cWxKxhk0lD1Rf0gavD_ey-tC3xw8aLLZnD4sSmZndnphE2DyaWOLMHCxFFBCiH0ULhv5ejdzSLOU4KAr0lTJv1Ei9qY38LQyZYErQ",
-      "id": "ce34"
-    },
-    {
-      "name": "Shirt",
-      "price": "800",
-      "category": "weare",
-      "color": "pink",
-      "description": "shirt",
-      "image": "https://www.jiomart.com/images/product/original/rvsxaqpw52/baleshwar-man-s-solid-slim-fit-casual-shirt-for-men-shirts-rd-xl-product-images-rvsxaqpw52-1-202304221432.jpg?im=Resize=(500,630)",
-      "id": "88c2"
-    },
     {
       "id": "95c4",
       "name": "i phone 15",
@@ -96,24 +50,6 @@
       "color": "white",
       "description": "apple mobile",
       "image": "https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg"
-    },
-    {
-      "name": "charger",
-      "price": "7766",
-      "category": "Accessories",
-      "color": "black",
-      "description": "fast charger",
-      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRErEbH9c6UQdFRG9y6RWbDNavP6RwJ7k3BnjgQwxpTPTyduF2iuyrzAV9f7L5WPTZ2lqqDxVJcMCEst6K-e3dg9t_N-KAHXtw-I4wBQjrwqWbvxJCMZcPHKTs",
-      "id": "zcNk8El"
-    },
-    {
-      "name": "Pen",
-      "price": "30",
-      "category": "Study material",
-      "color": "blue",
-      "description": "ball pen",
-      "image": "https://www.shutterstock.com/image-photo/blue-pen-isolated-on-white-260nw-557418118.jpg",
-      "id": "OjJk5ma"
     },
     {
       "name": "Dell Laptop",
@@ -204,6 +140,15 @@
       "description": "Orient Super Speed fan",
       "image": "https://img1.gadgetsnow.com/gd/images/products/additional/large/G636300_View_1/home-appliances/fans/crompton-highspeed-ameo-1200mm-48-inch-ceiling-fan-copper-gleam-star-rated-energy-efficient-fan.jpg",
       "id": "qHF_i7U"
+    },
+    {
+      "name": "Samsung s20 Ultra 5g",
+      "price": "124000",
+      "category": "electronic",
+      "color": "Black",
+      "description": "samsung Supprts",
+      "image": "https://images-cdn.ubuy.co.in/65c24caefb21a1469675950c-pre-owned-samsung-galaxy-s20-ultra-5g.jpg",
+      "id": "dghxPxR"
     }
   ],
   "users": [
@@ -218,73 +163,8 @@
       "email": "shankar123@gmail.com",
       "password": "12345",
       "id": 2
-    },
-    {
-      "name": "Ranjit ",
-      "email": "ranjit@gmail.com",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "name": "ganesh",
-      "email": "ganesh@gmail.com",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "name": "Dayanand",
-      "email": "daya@gamil.com",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "name": "Dayanand",
-      "email": "dayasalunke@gmail.com",
-      "password": "1111",
-      "id": 6
     }
   ],
   "cart": [],
-  "orders": [
-    {
-      "email": "salunke8379@gmail.com",
-      "address": "255 ameerpeth abcd.",
-      "contact": "9579038963",
-      "totalPrice": 660,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "email": "salunke8379@gmail.com",
-      "address": "255 ameerpeth abcd.",
-      "contact": "9579038963",
-      "totalPrice": 660,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "email": "salunke8379@gmail.com",
-      "address": "255 ameerpeth abcd.",
-      "contact": "9579038963",
-      "totalPrice": 660,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "email": "salunke8379@gmail.com",
-      "address": "255 ameerpeth abcd.",
-      "contact": "9579038963",
-      "totalPrice": 556215,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "email": "salunke8379@gmail.com",
-      "address": "255 ameerpeth abcd.",
-      "contact": "9579038963",
-      "totalPrice": 67160,
-      "userId": 1,
-      "id": 5
-    }
-  ]
+  "orders": []
 }

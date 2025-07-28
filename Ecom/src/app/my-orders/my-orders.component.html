@@ -21,8 +21,8 @@
   <div class="row order-data" *ngFor="let order of orderData" >
     <div class="col-sm-2">
       <img
-        [src]="order.image"
-        alt="Order image"
+        src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA="
+        alt="images"
         class="order-img"
       />
     </div>
@@ -37,7 +37,7 @@
     </div>
     <div class="col-sm-2">
       <span
-        ><button class="btn btn-danger text-white rounded-2">
+        ><button class="btn btn-danger text-white rounded-2" (click)="cancelOrder(order.id)">
           Cancel Order
         </button></span
       >

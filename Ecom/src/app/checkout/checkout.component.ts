@@ -41,7 +41,6 @@ export class CheckoutComponent implements OnInit {
         ...data,
         totalPrice: this.totalPrice,
         userId,
-        image:item.image,
         id:undefined
       }
       this.cartData?.forEach((item) =>{
