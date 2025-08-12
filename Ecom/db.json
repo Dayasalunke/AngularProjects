@@ -149,6 +149,15 @@
       "description": "samsung Supprts",
       "image": "https://images-cdn.ubuy.co.in/65c24caefb21a1469675950c-pre-owned-samsung-galaxy-s20-ultra-5g.jpg",
       "id": "dghxPxR"
+    },
+    {
+      "name": "charger",
+      "price": "5500000",
+      "category": "Accessories",
+      "color": "white",
+      "description": "jibcuyg",
+      "image": "https://cdn.grofers.com/app/assets/products/sliding_images/jpeg/f42a53b6-7084-436e-b972-1148181d9b38.jpg?ts=1721736178",
+      "id": "sBHXGoi"
     }
   ],
   "users": [
@@ -156,15 +165,57 @@
       "name": "Dayanand",
       "email": "salunke8379@gmail.com",
       "password": "1234",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "shankar",
       "email": "shankar123@gmail.com",
       "password": "12345",
-      "id": 2
+      "id": "2"
+    },
+    {
+      "name": "Reddy",
+      "email": "reddy@gmail.com",
+      "password": "1234",
+      "id": "dPuE5Ty"
     }
   ],
-  "cart": [],
-  "orders": []
+  "cart": [
+    {
+      "name": "Dell Mouse",
+      "price": "500",
+      "category": "Accessories",
+      "color": "black",
+      "description": "Dell Supports",
+      "image": "https://d23rlvd1yebk9y.cloudfront.net/pub/media/catalog/product/cache/a58e64ec630f4d32db43809c2e2f77b2/l/_/l_lkj.jpg",
+      "quantity": 1,
+      "productId": "hLvDHYl",
+      "userId": null,
+      "id": 1
+    },
+    {
+      "name": "i phone 15",
+      "price": "555555",
+      "category": "mobile",
+      "color": "white",
+      "description": "apple mobile",
+      "image": "https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg",
+      "quantity": 1,
+      "productId": "95c4",
+      "userId": null,
+      "id": 2
+    },
+    {
+      "name": "Dell Mouse",
+      "price": "500",
+      "category": "Accessories",
+      "color": "black",
+      "description": "Dell Supports",
+      "image": "https://d23rlvd1yebk9y.cloudfront.net/pub/media/catalog/product/cache/a58e64ec630f4d32db43809c2e2f77b2/l/_/l_lkj.jpg",
+      "quantity": 1,
+      "productId": "hLvDHYl",
+      "userId": null,
+      "id": 3
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-<ngb-carousel *ngIf="popularProducts">
+<ngb-carousel *ngIf="popularProducts" [interval]="2000">
   <ng-template *ngFor="let item of popularProducts" ngbSlide>
     <div class="picsum-img-wrapper">
       <a [routerLink]="'/details/' + item.id"> <img
@@ -15,26 +15,20 @@
   </ng-template>
 </ngb-carousel>
 <div class="product-list-wrapper">
-  <h1 class="text-center mb-5">Trendy Product</h1>
-  <div class="row">
-    <div class="col-sm-3" *ngFor="let item of trendyProducts">
-        <div class="product-item">
-          <img src="{{item.image}}" alt="">
-       
-        <div class="product-details">
-          <h6 class="name-head">{{item.name}}</h6>
-          <div class="product-price">
-         <h6>Price: {{item.price}}</h6>
-          </div>
-          <div class="product-color">
-            <h6>Color: {{item.color}}</h6>
-             </div>
+  <h1 class="text-center mb-5 ">Trendy Products</h1>
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let item of trendyProducts">
+      <div class="card h-100 shadow-sm border-0 product-hover-effect">
+        <a [routerLink]="'/details/' + item.id"> <img [src]="item.image" class="card-img-top p-3 object-fit-contain" style="height: 200px;" alt="{{item.name}}"/></a>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-semibold">{{ item.name }}</h5>
+          <p class="card-text mb-1">Price: ₹{{ item.price }}</p>
+          <p class="card-text text-muted">Color: {{ item.color }}</p>
         </div>
-        <div class="product-footer">
-          <a [routerLink]="'/details/' + item.id">View Details</a>
-          <a href="">Add to Cart</a>
+        <div class="card-footer bg-white border-0 text-center">
+          <a [routerLink]="'/details/' + item.id" class="btn btn-outline-primary btn-sm px-4">View Details</a>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 </div>

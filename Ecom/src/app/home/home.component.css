@@ -1,6 +1,6 @@
 .product-header-img{
     object-fit: contain;
-    height: 600px;
+    height: 400px;
     width:100%;
   }
   .product-list-wrapper{
@@ -35,3 +35,12 @@
       justify-content: space-between;
       padding: 10px;
   }
+  .product-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.product-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
