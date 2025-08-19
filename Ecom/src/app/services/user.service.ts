@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { login, SignUp } from '../data-type';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { EventEmitter } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +11,12 @@ import { EventEmitter } from '@angular/core';
 export class UserService {
 
   invalidUserAuth = new EventEmitter<boolean>(false)
-  constructor(private http:HttpClient, private router:Router) {}
+  constructor(private http:HttpClient, private router:Router, @Inject(PLATFORM_ID) private platformId: Object) {}
   userSignUp(user: SignUp){
     // console.warn(user);
    this.http.post("  http://localhost:3000/users",user,{observe:'response'})
    .subscribe((result) => {
-      if(result){
+      if(result && isPlatformBrowser(this.platformId)){
         localStorage.setItem('user',JSON.stringify(result.body));
         this.router.navigate(['/']);
       }
@@ -26,7 +27,9 @@ export class UserService {
     .subscribe((result) =>{
       if(result && result.body?.length){
         this.invalidUserAuth.emit(false);
-        localStorage.setItem('user',JSON.stringify(result.body[0]));
+        if(isPlatformBrowser(this.platformId)){
+          localStorage.setItem('user',JSON.stringify(result.body[0]));
+        }
         this.router.navigate(['/']);
       }else{
         this.invalidUserAuth.emit(true);
@@ -34,8 +37,8 @@ export class UserService {
     })
   }
   userAuthReload(){
-    if(localStorage.getItem(`user`)){
-      this.router.navigate([`/`]);
+    if(isPlatformBrowser(this.platformId) && localStorage.getItem('user')){
+      this.router.navigate(['/']);
     }
   }
 }

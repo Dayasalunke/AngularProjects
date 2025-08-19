@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { cart, login, product, SignUp } from '../data-type';
 import { UserService } from '../services/user.service';
 import { ProductService } from '../services/product.service';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-user-auth',
@@ -13,7 +14,7 @@ export class UserAuthComponent implements OnInit {
   showLogin: boolean = true;
   authError: string = '';
 loginPassword: any;
-  constructor(private user: UserService, private product: ProductService) {}
+  constructor(private user: UserService, private product: ProductService, @Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
     this.user.userAuthReload();
@@ -39,33 +40,35 @@ loginPassword: any;
     this.showLogin = true;
   }
   localCartToRemoteCart() {
-    let data = localStorage.getItem('localCart');
+    if(isPlatformBrowser(this.platformId)) {
+      let data = localStorage.getItem('localCart');
       let user = localStorage.getItem('user');
       let userId = user && JSON.parse(user).id;
-    if (data) {
-      let cartDataList: product[] = JSON.parse(data);
+      if (data) {
+        let cartDataList: product[] = JSON.parse(data);
 
-      cartDataList.forEach((product: product, index:number) => {
-        let cartData: cart = {
-          ...product,
-          productId: product.id,
-          userId,
-        };
-        delete cartData.id;
-        setTimeout(() => {
-          this.product.addToCart(cartData).subscribe((result) => {
-            if (result) {
-             console.warn('item stored in DB');
+        cartDataList.forEach((product: product, index:number) => {
+          let cartData: cart = {
+            ...product,
+            productId: product.id,
+            userId,
+          };
+          delete cartData.id;
+          setTimeout(() => {
+            this.product.addToCart(cartData).subscribe((result) => {
+              if (result) {
+               console.warn('item stored in DB');
+              }
+            });
+            if(cartDataList.length === index + 1){
+              localStorage.removeItem('localCart');
             }
-          });
-          if(cartDataList.length === index + 1){
-            localStorage.removeItem('localCart');
-          }
-        }, 500);
-      });
+          }, 500);
+        });
+      }
+      setTimeout(() => {
+        this.product.getCartList(userId);
+      }, 2000);
     }
-    setTimeout(() => {
-      this.product.getCartList(userId);
-    }, 2000);
   }
 }

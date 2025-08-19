@@ -31,31 +31,33 @@ export class HeaderComponent implements OnInit {
         this.menuType = 'user';
         let userData = JSON.parse(localStorage.getItem('user')!); // ✅ fix
         this.userName = userData.name;
-        this.product.getCartList(userData.id); 
+        this.product.getCartList(userData.id).subscribe(); 
       } else {
         this.menuType = 'default';
-
-        
       }
     }
   });
  
-  
-// if( localStorage.getItem('localCart')){
+  // Initialize cart count from localStorage
   let cartData = localStorage.getItem('localCart');
-  console.log()
   if(cartData){
-    //  console.log(JSON.parse(cartData).length)
-    this.cartItems = JSON.parse(cartData).length
+    this.cartItems = JSON.parse(cartData).length;
   }
-  // console.log(this.product)
+  
+  // Subscribe to cart data changes
   this.product.cartData.subscribe((items) =>{
-    // console.log(items)
-  if(items.length >0){
-   this.cartItems = items.length
-  }
-    
+    if(items && items.length >= 0){
+      this.cartItems = items.length;
+    } else {
+      this.cartItems = 0;
+    }
   })
+  
+  // Also listen for local cart changes
+  if (localStorage.getItem('user')) {
+    let userData = JSON.parse(localStorage.getItem('user')!);
+    this.product.getCartList(userData.id).subscribe();
+  }
   }
   
 }

@@ -58,8 +58,9 @@
         </div>
 
         
-        <button type="submit" class="btn btn-primary mb-5 w-50">
-         Order Now
+        <button type="submit" class="btn btn-primary mb-5 w-50" [disabled]="isProcessing">
+          <span *ngIf="isProcessing" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+          {{ isProcessing ? 'Processing Order...' : 'Order Now' }}
         </button>
       </form>
     </div>

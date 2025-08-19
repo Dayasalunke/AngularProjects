@@ -50,9 +50,7 @@
       <li><a class="nav-link text-white" routerLink="/seller-auth">Seller</a></li>
       <li><a class="nav-link text-white" routerLink="/">Home</a></li>
       <li><a class="nav-link text-white" routerLink="/user-auth">{{ userName | titlecase }}</a></li>
-
-      <li><a class="nav-link text-white" routerLink="/my-orders">My Orders</a></li>
-
+      <li><a class="nav-link text-white" routerLink="my-orders">My Orders</a></li>
       <li><a class="nav-link text-white" (click)="userLogout()">Logout</a></li>
 
       <li><a class="nav-link text-white" [routerLink]="cartItems >0?'cart-page':null">Cart({{cartItems}})</a></li>

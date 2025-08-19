@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { cart, order } from '../data-type';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-checkout',
@@ -14,8 +15,9 @@ export class CheckoutComponent implements OnInit {
   totalPrice:number | undefined;
   cartData:cart[] |undefined;
   orderMsg:string | undefined;
+  isProcessing: boolean = false;
 
-  constructor(private product:ProductService,private router:Router){}
+  constructor(private product:ProductService,private router:Router, @Inject(PLATFORM_ID) private platformId: Object){}
 
   ngOnInit(){
        this.product.currentCart().subscribe((result) => {
@@ -32,9 +34,12 @@ export class CheckoutComponent implements OnInit {
   }
 
   orderNow(data: { email: string, address: string, contact: string }, form: NgForm) {
-
-    let user = localStorage.getItem('user');
-    let userId = user && JSON.parse(user).id;
+    this.isProcessing = true;
+    let userId;
+    if(isPlatformBrowser(this.platformId)) {
+      let user = localStorage.getItem('user');
+      userId = user && JSON.parse(user).id;
+    }
 
     if(this.totalPrice){
       let orderData:order = {
@@ -43,20 +48,28 @@ export class CheckoutComponent implements OnInit {
         userId,
         id:undefined
       }
+      
+      // Delete cart items immediately
       this.cartData?.forEach((item) =>{
-       setTimeout(() => {
-       item.id && this.product.deleteCartItems(item.id)
-       },900);
-      })
+        if(item.id) {
+          this.product.deleteCartItems(item.id).subscribe((result: any) =>{
+            if(result.status === 200){
+              // Cart count will be updated automatically by the service
+            }
+          });
+        }
+      });
 
-      this.product.orderNow(orderData).subscribe((result) =>{
+      this.product.orderNow(orderData).subscribe((result: any) =>{
         if(result){
            this.orderMsg = "your order has been placed";
            form.reset();
-           setTimeout(() =>{
-            this.router.navigate(['/my-orders']);
-            this.orderMsg = undefined;
-           },4000);
+           // Navigate immediately after order placement
+           setTimeout(() => {
+             this.router.navigate(['/my-orders']);
+             this.orderMsg = undefined;
+             this.isProcessing = false;
+           }, 1000);
         }
       })
   
