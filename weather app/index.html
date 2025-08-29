@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌤 Weather App</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-blue-200 via-white to-blue-200 min-h-screen flex flex-col items-center justify-center font-sans">
+   
+  <div class="flex justify-between items-center w-full max-w-md mb-6">
+    <h1 class="text-3xl font-bold text-gray-800 dark:text-white">🌤 Simple Weather App</h1>
+    <button id="darkModeToggle" onclick="toggleDarkMode()" class="bg-gray-800 text-white px-4 py-3 rounded-lg hover:bg-gray-700 shadow-lg transition-all duration-300" title="Switch to Dark Mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-3 items-center mb-6">
+    <input id="cityInput" type="text" placeholder="Enter city name"
+      class="px-4 py-2 rounded-md border border-gray-400 shadow focus:outline-none focus:ring-2 focus:ring-blue-400 w-72" />
+    <button onclick="getWeather()" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 shadow">
+      Get Weather
+    </button>
+  </div>
+
+  <div id="result" class="text-center p-4 w-full max-w-md"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
